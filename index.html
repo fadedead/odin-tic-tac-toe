@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="./script.js"></script>
 </head>
+
 <body>
+    <div id='game-play'>
+        <div id="current-state"></div>
+        <table id='board'>
+            <tr>
+                <td class="cell-0-0"></td>
+                <td class="cell-0-1"></td>
+                <td class="cell-0-2"></td>
+            </tr>
+            <tr>
+                <td class="cell-1-0"></td>
+                <td class="cell-1-1"></td>
+                <td class="cell-1-2"></td>
+            </tr>
+            <tr>
+                <td class="cell-2-0"></td>
+                <td class="cell-2-1"></td>
+                <td class="cell-2-2"></td>
+            </tr>
+        </table>
+
+        <form id='play-settings'>
+            <input id="player-1" name="p1" type="text" placeholder="player 1">
+            <button id="start-game">Start</button>
+            <input id="player-2" name="p2" type="text" placeholder="player 2">
+        </form>
+    </div>
+    <div id='score-board'>
+        <div class="players"></div>
+        <div class="scores"></div>
+
+    </div>
 </body>
+
 </html>
